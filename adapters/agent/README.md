@@ -17,7 +17,7 @@ export SCOPEWEAVER_PASSWORD='your-existing-admin-password'
 
 The password is used to log in as the backend's existing `ARTEX` admin user. The returned JWT stays in memory. Alternatively set `SCOPEWEAVER_TOKEN` to an existing login JWT; a supplied token takes precedence. Expired/invalid tokens produce an error and are not silently replaced. Keep credentials in your environment or secret manager; do not commit them to client configuration.
 
-Reads are enabled by default. To enable task creation and pause/resume, explicitly set `SCOPEWEAVER_ALLOW_WRITES=true` before starting the adapter. Task creation schedules work immediately when the backend has an LLM configured. Retain the project's [locally isolated usage restrictions](../../README.md#license-and-disclaimer) and confirm the intended scope before creating a task.
+Reads are enabled by default. To enable task creation and pause/resume, explicitly set `SCOPEWEAVER_ALLOW_WRITES=true` before starting the adapter. Task creation schedules work immediately when the backend has an LLM configured. Use this adapter only for [authorized penetration testing or bug bounty hunting](../../README.md#license-and-disclaimer), and confirm authorization, scope, and applicable program rules before creating a task.
 
 ### Claude Code
 
@@ -67,7 +67,7 @@ The extension registers native Pi tools and uses the same environment variables.
 | `scopeweaver_create_task` | Create/schedule a task; requires writes enabled |
 | `scopeweaver_control_task` | Pause/resume a task; requires writes enabled |
 
-Example requests: “List my ScopeWeaver tasks,” “Show the high-severity findings for task 12,” or, after enabling writes and confirming a local lab scope, “Create a task for this local fixture and show its progress.” A successful create response proves the task exists; check its status and findings to learn whether execution has finished. The adapter does not bypass backend LLM requirements.
+Example requests: “List my ScopeWeaver tasks,” “Show the high-severity findings for task 12,” or, after enabling writes and confirming an authorized bug bounty scope, “Create a task for the approved target and show its progress.” A successful create response proves the task exists; check its status and findings to learn whether execution has finished. The adapter does not bypass backend LLM requirements.
 
 ## Configuration and failures
 

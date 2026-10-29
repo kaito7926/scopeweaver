@@ -20,10 +20,10 @@ Modification date: **2026-10-02**. See [provenance and changes](docs/PROVENANCE.
 > The code and architecture originate in ARTEX. This standalone derivative changes the product
 > name, English/Korean interface and messages, documentation, and distribution targets. See [Provenance and changes](#provenance-and-changes)
 > for the full list of what differs from upstream, and [License and disclaimer](#license-and-disclaimer)
-> for the terms, which are unchanged (AGPL-3.0).
+> for the AGPL-3.0 license and authorized-use guidance.
 >
 > **Authorization.** This is a security-testing tool. Use it only against systems you own or are
-> explicitly authorized to test. The upstream usage restrictions still apply — read them below.
+> explicitly authorized to test. Use it only for authorized penetration testing or bug bounty hunting.
 
 ---
 
@@ -656,8 +656,8 @@ unchanged and credited to upstream.
 
 ## License and disclaimer
 
-> This section preserves the upstream license and the authors' usage restrictions and disclaimer,
-> translated faithfully from ARTEX. The terms are unchanged.
+> The upstream AGPL-3.0 license is preserved. The usage guidance below describes ScopeWeaver's
+> authorized penetration testing and bug bounty hunting policy.
 
 ### Open-source license
 
@@ -669,24 +669,21 @@ also be open-sourced under AGPL-3.0**; in particular, **if you modify this proje
 users over a network (for example, as a hosted service), you must also make the corresponding
 complete source code available to those users.**
 
-> ⚠️ **Important**: an open-source license does not by itself restrict how the software may be used.
-> The "usage restrictions" and "disclaimer" below are additional conditions and a serious statement
-> from the authors to users. Please observe them.
+> ⚠️ **Important**: an open-source license does not by itself grant authorization to test a system.
+> Use ScopeWeaver only for penetration testing with the owner’s explicit authorization or for bug
+> bounty testing within the program’s permitted scope and rules.
 
-**ARTEX is intended only for personal study, source-code research, and local technical validation. It
-must not be used to launch real tests against any online system or website.**
+**This software should be used only for authorized penetration testing or bug bounty hunting.**
 
 ### Permitted use
 
-- Only for **reading, studying, and researching this project's source code**, and for validating the
-  technical principles in a **locally isolated environment**.
-- Suitable for personal study, academic research, code review, and other non-attacking uses.
+- Conduct penetration testing only with explicit authorization from the system owner.
+- Hunt bugs only within the scope and rules of a bug bounty program that permits your testing.
 
 ### Prohibited
 
-- **Do not use this tool to scan, probe, exploit, or attack any website, online service, or
-  networked system** (whether or not you are authorized, and whether or not the asset is your own).
-- Do not use this tool for any real penetration test, red/blue exercise, or production environment.
+- Do not test systems without explicit authorization or outside the agreed scope.
+- Do not exceed a bug bounty program's permitted targets, methods, or testing limits.
 - Do not use this tool for illegal intrusion, data theft, extortion, denial of service, or any
   destructive or criminal activity.
 - Do not use this tool for anything that violates the laws and regulations of your country or region.

@@ -68,8 +68,8 @@ Single column of hairline-separated sections, varying density deliberately:
 4. **Install** — three concrete paths (one-click script, Docker Compose, release
    archive) with copyable commands and the five platform-archive chips + GHCR.
 5. **Requirements** — four hairline cells: PostgreSQL, a separately configured
-   model provider, Node.js 22+ for the adapter, a local lab target.
-6. **Limits & credits** — a plain limits list (locally isolated only; backend CI
+   model provider, Node.js 22+ for the adapter, an explicitly authorized target.
+6. **Limits & credits** — a plain limits list (authorized penetration testing or bug bounty hunting only; backend CI
    red on one inherited test; no production/effectiveness claims; unverified
    Docker/Windows; npm audit findings; adapter tests use local fixtures and
    live coding-agent-to-provider execution is not independently verified, linked
@@ -108,7 +108,7 @@ Every screenshot is captioned fictional demo data. The owner-workflow paragraph
 is deidentified orchestration evidence only — no targets, findings, messages,
 model usage or credentials. Claims trace to README, the adapter README,
 PROVENANCE, VERIFICATION and the v0.1.0 changelog. ScopeWeaver is a derivative of
-ARTEX under AGPL-3.0; usage is restricted to locally isolated research.
+ARTEX under AGPL-3.0; usage is restricted to authorized penetration testing or bug bounty hunting.
 
 ## Verification performed (build-time, non-browser)
 

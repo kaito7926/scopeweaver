@@ -39,7 +39,7 @@ export function createTools(client) {
   ];
   if (client.config.allowWrites) {
     tools.push(
-      tool("create_task", "Create ScopeWeaver task", "Create and schedule a security-testing task for a locally isolated lab under the repository's usage restrictions. Ask the user to confirm the scope first. A configured backend LLM may start work immediately. Returns a task ID; use get_task to track execution.", {
+      tool("create_task", "Create ScopeWeaver task", "Create and schedule a task only for authorized penetration testing or bug bounty hunting, within the approved scope and applicable program rules. Ask the user to confirm the scope first. A configured backend LLM may start work immediately. Returns a task ID; use get_task to track execution.", {
         name: z.string().max(200).optional(), description: z.string().trim().min(1).max(10000),
         goal: z.string().trim().min(1).max(10000), timeout_seconds: z.number().int().min(1).max(86400).default(600),
         company_ids: z.array(z.number().int().positive().max(Number.MAX_SAFE_INTEGER)).max(32).optional(),

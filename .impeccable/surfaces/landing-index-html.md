@@ -13,7 +13,7 @@ Persuade. This brief is development-only context and is never shipped in
 `landing/`.
 
 Audience and job: developers and security researchers evaluating ScopeWeaver
-for locally isolated research. They should see the real application, understand
+for authorized penetration testing or bug bounty hunting. They should see the real application, understand
 how a task moves across its actual screens, learn how a coding agent can drive
 it, trust the stated limits, and reach the v0.1.0 release or setup commands.
 
@@ -72,7 +72,7 @@ explanations collapse to zero height. Vertical roving-tabindex keyboard model
 tablist swaps the three agent install commands, each with a localised copy
 button.
 
-HONEST LIMITS: locally isolated use only; backend CI red on one inherited test;
+HONEST LIMITS: authorized testing only; backend CI red on one inherited test;
 no production or effectiveness claims; unverified Docker/Windows runtimes; npm
 audit findings; adapter tests use local fixtures and live
 coding-agent-to-provider execution is not independently verified (linked to
